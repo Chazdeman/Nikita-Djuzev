@@ -71,3 +71,18 @@ def register(users,passwords):
 				passwords.append(pas)
 				break
 	return users,passwords
+
+def loe_failist_listisse(file:str)->list:
+    """Loeme tekst failist ja salvesta järjendisse
+    """
+    file=open(file,"r")
+    list_=[]
+    for stroka in file:
+        list_.append(stroka.strip())
+    file.close()
+    return list_
+
+def faili_sisu_umberkirjutamine(file:str,list_:list):
+	with open(file,"a") as f:
+		for text in list:
+			f.write(text+"\n")
