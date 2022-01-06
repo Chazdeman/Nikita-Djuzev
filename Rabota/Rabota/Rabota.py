@@ -1,0 +1,27 @@
+from tkinter import *
+
+    
+aken=Tk()
+aken.title("Nikita")
+aken.geometry("1000x500")
+aken.configure(bg="white")
+reh=Button(aken,text="Решение",font="Times_New_Roman 20", fg="black", bg="green", height=4, width=50 , relief=GROOVE )
+lbl=Label(aken,text="Решение квадратного уравнения", height=4, width=30, font="Arial 20", fg="black", bg="pink")
+lbl1=Label(aken,text="Решение", height=4, width=40, font="Arial 20", fg="black", bg="pink")
+lbl2=Label(aken,text="x**2+", height=1, width=6, font="Arial 20", fg="black", bg="white")
+lbl3=Label(aken,text="x+", height=1, width=6, font="Arial 20", fg="black", bg="white")
+lbl4=Label(aken,text="=0", height=1, width=6, font="Arial 20", fg="black", bg="white")
+txt=Entry(aken,font="Times_New_Roman 30", width=3,fg="red", bg="#03ecfc",justify=RIGHT)
+txt2=Entry(aken,font="Times_New_Roman 30", width=3,fg="red", bg="#03ecfc",justify=RIGHT)
+txt3=Entry(aken,font="Times_New_Roman 30", width=3,fg="red", bg="#03ecfc",justify=RIGHT)
+lbl.pack()
+lbl1.pack(side=BOTTOM)
+txt.pack(side=LEFT)
+lbl2.pack(side=LEFT,padx=5,pady=5)
+txt2.pack(side=LEFT)
+lbl3.pack(side=LEFT)
+txt3.pack(side=LEFT)
+lbl4.pack(side=LEFT)
+
+reh.pack(side=RIGHT)
+aken.mainloop()

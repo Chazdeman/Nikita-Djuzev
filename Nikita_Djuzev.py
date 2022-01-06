@@ -20,4 +20,3 @@ while 1:
 		break
 	else:
 		print("On vaja valida 0 / 1 / 2 / 3")# kõik on olemas
-
